@@ -1,0 +1,29 @@
+{
+  "name": "classmany",
+  "version": "1.0.0",
+  "description": "A fast, small and performant package for generating conditional classNames for React.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc",
+    "test": "jest",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierrefrota/classmany.git"
+  },
+  "author": "Pierre Frota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pierrefrota/classmany/issues"
+  },
+  "homepage": "https://github.com/pierrefrota/classmany#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
