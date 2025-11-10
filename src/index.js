@@ -21,5 +21,3 @@ const classmany = (...args) => {
 
   return classes.join(" ");
 };
-
-console.log(classmany("a", true, false, "", null, undefined, 0, NaN));
