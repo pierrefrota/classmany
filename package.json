@@ -5,10 +5,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "clean": "rimraf lib",
-    "build": "npm run clean && tsc",
-    "test": "jest",
-    "prepublish": "npm run test && npm run build"
+    "minify": "terser src/index.js --config-file .terser --output lib/index.js",
+    "build": "npm run minify"
   },
   "repository": {
     "type": "git",
@@ -24,6 +22,6 @@
     "lib/**/*"
   ],
   "devDependencies": {
-    "typescript": "^4.7.4"
+    "terser": "^5.14.2"
   }
 }
